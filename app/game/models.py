@@ -10,7 +10,6 @@ class Game(db.Model, BaseDBModel):
     def __init__(self, code, tries=10):
         # TODO: validate code equal to 4 size string
         # Tries can be modified, by default 10 tries to go
-        # Guesses is not a parameter, forced to be an empty list
         self.code = code
         self.tries = tries
 
